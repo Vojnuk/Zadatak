@@ -17,18 +17,7 @@ $sql = "INSERT INTO `Korisnicki_Nalozi`(
 
 if($result = mysqli_query($conn,$sql)){
     echo "User added";
-    //also adding username to Korisnicki podaci radi konekcije
-    $sql = "INSERT INTO `Podaci_o_Korisniku`(
-        `username`, 
-        `tel`,
-        `email` 
-        ) VALUES (
-            '$sanitizedUsername', 
-            '+381 00 0000000', 
-            'oo@oo'
-            )";
-    if($result = mysqli_query($conn,$sql)){
-    } else "Error " . mysqli_error($conn);
+    $_SESSION["username"] = $sanitizedUsername;
 }else{
     echo "Duplicate user";
 }
