@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+<html lang="sr">
+	<header>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta title="Prijava">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/style.css">
+		<script src="/index.js"></script>
+	</header>
+
+	<body>
+		
+		<div class="centered-form">
+
+			<div class="centered-form__box" style="min-width: content-width;">
+
+				<div class="formSelection" >
+				<button>Prijava</button>
+				<button>Registracija</button>
+				</div>
+				
+				<div class="login">
+				<h1>Prijava</h1>
+				<form id="loginForm"> 
+					<label for="username">Korisničko ime:</label>
+					<input size="10" name="username" type="text" placeholder="Korisničko ime" required>
+					<label for="password" >Šifra:</label>
+					<input name="password" type="text" placeholder="Adsd2343" required>
+
+					<button>Prijavite se</button>
+					<p class="infoMessage"></p>
+				</form>
+				</div>
+			
+			
+				<div class="signup">
+				<h1>Registracija</h1>
+				<form id="signupForm"> 
+					<label for="username">Korisničko ime:</label>
+					<input name="username" type="text" placeholder="Korisničko ime" required>
+					<label for="password" >Šifra:</label>
+					<input name="password" type="text" placeholder="Adsd2343" required>
+
+					<button>Registrujte se</button>
+					<p id="signupMessage"></p>
+				</form>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
